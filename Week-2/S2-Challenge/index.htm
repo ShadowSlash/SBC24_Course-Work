@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W2 S2 - Challenge</title>
+    <link rel="stylesheet" href="./assets/style.css"></style>
 </head>
 <body>
-    
+    <form>
+        <fieldset>
+          <legend>Challenge form</legend>
+          <p>Required fields are labeled with "Required".</p>
+          <div>
+            <label for="email" aria-invalid="false">Email:</label>
+            <input id="email" name="email" type="email" required />
+            <span></span>
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" required />
+            <span></span>
+          </div>
+          <div>
+          <label for="reasons">Reason for message:</label>
+          <span></span>
+            <select name="reasons" id="reasons">
+                <option value="need help">Need Help</option>
+                <option value="have a request">Have a Request</option>
+                <option value="inquiry">Inquiry</option>
+                <option value="make a complaint">Make a Complaint</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Enter Message:</label>
+            <span></span>
+            <textarea cols="50" rows="10"></textarea>
+          </div>
+          <div><button>Submit</button></div>
+        </fieldset>
+      </form>
 </body>
 </html>
