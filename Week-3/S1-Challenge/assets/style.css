@@ -44,6 +44,12 @@ body {
     border-radius: 50%;
 }
 
+/* Burger Menu */
+
+.burger-icon {
+    display: none;
+}
+
 /* Sidebar */
 .sidebar {
     grid-area: sidebar;
@@ -116,4 +122,21 @@ body {
 
 .complete-btn:hover {
     background-color: #45a049;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .dashboard-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger-icon {
+        display: block;
+    }
+
+    .sidebar nav ul {
+        display: none;
+    }
 }
