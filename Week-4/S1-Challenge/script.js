@@ -1,8 +1,17 @@
-function calculateSum(a, b) {
-  console.log("The sum of the numbers is: " + (Number(a) + b));
+/* Calculator Challenge */
+
+function dis(val) {
+  document.getElementById("display").value += val
 }
 
-calculateSum("5", 10);
+function appendToDisplay(input) {
+  display.value += input;
+}
 
+function clearDisplay() {
+  display.value = "";
+}
 
-/* Calculator Challenge */
+function calculate() {
+  display.value = eval(display.value);
+}

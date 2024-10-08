@@ -4,9 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W4 S1 - Challenge</title>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </head>
+<style>
+    /* #cont  {
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    } */
+
+    #calculator {
+        font-family: sans-serif;
+        background-color: hsl(0, 0%, 15%);
+        border-radius: 15px;
+        max-width: 500px;
+        overflow: hidden;
+    }
+
+    #display {
+        width: 100%;
+        padding: 20px;
+        font-size: 5rem;
+        text-align: left;
+        border: none;
+        color: white;
+        background-color: hsl(0, 0%, 20%);
+    }
+
+    #keys {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 25px;
+    }
+
+    button {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: none;
+        background-color: rgb(85, 85, 85);
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: hsl(0, 0%, 40%);
+    }
+
+    button:active {
+        background-color: hsl(0, 0%, 50%);
+    }
+
+    .op-btn {
+        background-color: hsl(35, 100%, 55%)
+    }
+
+    .op-btn:hover {
+        background-color: hsl(35, 100%, 65%);
+    }
+
+    .op-btn:active {
+        background-color: hsl(35, 100%, 75%);
+    }
+
+
+</style>
 <body>
-    <h1>Right Click and click Inspect, then click on Console to see your output</h1>
+    <h1>Son asked me for a toy car that runs on batteries for Christmas so I gave him a Tesla :P</h1>
+    <div id="cont">
+        <div id="calculator">
+            <input id="display" readonly>
+            <div id="keys">
+                <button onclick="appendToDisplay('+')" class="op-btn">+</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')" class="op-btn">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')" class="op-btn">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('/')" class="op-btn">/</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')" class="op-btn">.</button>
+                <button onclick="calculate()" class="op-btn">=</button>
+                <button onclick="clearDisplay()" class="op-btn">C</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
