@@ -139,4 +139,8 @@ body {
     .sidebar nav ul {
         display: none;
     }
+
+    .hide-date {
+        display: none;
+    }
 }
