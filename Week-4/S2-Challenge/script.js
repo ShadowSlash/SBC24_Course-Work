@@ -3,6 +3,6 @@
 var fruit = ['Apple', 'Banana', 'Cherry', 'DragonFruit', 'Elderberry']
 
 const list = fruit
-    .trim("a")
+    .split(" ")
     .join(" ")
 console.log(list);
