@@ -27,6 +27,7 @@ const mess = 'I   aM        OK       WithThiS MESS!!            '
 
 // This fixes the messy text by removing extra spacing, separating 'WithThiS', changing all text to lowercase, and then capitalizing the first letter of each word.
 const fix = mess
+    .trimEnd()
     .replace(/([A-Z][a-z])/g, ' $1') // Key 1
     .split(/\s+/) // Key 2
     .map(word => word.toLocaleLowerCase())
@@ -89,7 +90,7 @@ function padBothSides(str, totalLength) { // This Func makes 2 arguments, str (t
     return str
         .padStart(str.length + halfLength, ' ') // The 'str.lenght' is a property that gives the value of how many characters there are in the string.
 
-        .padEnd(totalLength, ' '); // The 'totallength' represents the desired length of the final padded string.
+        .padEnd(totalLength, ' '); // The 'totalLength' represents the desired length of the final padded string.
 
         // From the 'Return', it completes the funtion. So when the function is first called (line 102), it exacutes it and upon reaching return, it returns to the place it was first called, again line 102, but with the value of the function. Then it goes on to the following time its called (line 103), and repeats until its no longer called.
 }
