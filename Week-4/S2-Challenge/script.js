@@ -120,7 +120,7 @@ function placedOrder(orderList) {
 placedOrder(customerOrder); // Calls the placedOrder function and passes the customerOrder array as an argument.This initiates the process of formatting and printing the order details in a neatly formatted table.
 
 
-// Expected Output: usefull
+// Expected Output:
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
