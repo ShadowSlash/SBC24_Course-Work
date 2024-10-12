@@ -126,7 +126,7 @@ placedOrder(customerOrder); // Calls the placedOrder function and passes the cus
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 |    Name    |    Order    |    Quantity    |    Total     |
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-|    Leo     |    Mocha    |       2        |    £9.00     |
-|   Vitor    |  Espresso   |       6        |    £18.00    |
-|   Jason    |    Latte    |       4        |    £16.00    |
+|    Leo     |    Mocha    |       2        |        £9.00 |
+|   Vitor    |  Espresso   |       6        |       £18.00 |
+|   Jason    |    Latte    |       4        |       £16.00 |
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
