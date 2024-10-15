@@ -12,7 +12,9 @@ document.getElementById("getWeather").addEventListener("click", function () {
       .then((data) => {
         if (data.length > 0) {
           //TODO: get the latitude and longitude for the city
+          const {lat, lon} = data[0]
           //TODO: Call getWeather API with latitude and longitude
+          getWeather(lat, lon)
         } else {
           displayError("City not found");
         }
@@ -31,9 +33,10 @@ function getWeather(lat, lon) {
     .then((response) => response.json())
     .then((data) => {
       //TODO: get the main, weather, and name from the data
-      // const name = ???
-      // const temperature = ???
-      // const description = ???
+      const name = data.name;
+      const temperature = data.main.temp;
+      const description = data.weather[0].description;
+      
       displayWeather(name, temperature, description);
     })
     .catch((error) => displayError("Error fetching weather data."));
@@ -44,6 +47,11 @@ function displayWeather(city, temperature, description) {
   const weatherResult = document.getElementById("weatherResult");
 
   //TODO: display the city, temperature, and description in the weatherResult element
+  weatherResult.innerHTML = `
+    <p>City: ${city}</p>
+    <p>Temperature: ${temperature}°C</p>
+    <p>Description: ${description}</p>
+  `;
 }
 
 // Function to display error messages
