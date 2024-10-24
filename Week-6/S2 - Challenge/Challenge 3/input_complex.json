@@ -1,0 +1,52 @@
+{
+    "company": {
+        "name": "Tech Corp",
+        "location": "New York",
+        "departments": [
+            {
+                "name": "Engineering",
+                "employees": [
+                    {"name": "Alice", "age": 30, "role": "Software Engineer"},
+                    {"name": "Bob", "age": 35, "role": "DevOps Engineer"}
+                ]
+            },
+            {
+                "name": "Sales",
+                "employees": [
+                    {"name": "Charlie", "age": 28, "role": "Sales Manager"},
+                    {"name": "Dana", "age": 32, "role": "Account Executive"}
+                ]
+            }
+        ]
+    },
+    "products": [
+        {
+            "id": 1,
+            "name": "SuperPhone",
+            "category": "Electronics",
+            "price": 699.99,
+            "features": {
+                "screen_size": "6.5 inches",
+                "battery": "4000 mAh",
+                "camera": "12 MP"
+            }
+        },
+        {
+            "id": 2,
+            "name": "SmartWatch",
+            "category": "Wearables",
+            "price": 199.99,
+            "features": {
+                "battery": "350 mAh",
+                "water_resistance": "50 meters",
+                "health_tracking": true
+            }
+        }
+    ],
+    "financials": {
+        "revenue": 5000000,
+        "expenses": 3000000,
+        "profit": 2000000,
+        "year": 2023
+    }
+} 
