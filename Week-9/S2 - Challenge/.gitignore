@@ -101,9 +101,7 @@ next-env.d.ts
 *.pyc
 **/__pycache__/**
 **/.venv/**
-**/myvenv/**
-**/myenv/**
-
+**/storevenv/**
 
 ## Java
 *.class
