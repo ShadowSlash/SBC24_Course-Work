@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import './App.css'
-import Student from './components/Students';
+import { useState } from "react";
+import "./App.css";
+import Student from "./components/Students";
 
 function App() {
   const students = [
@@ -8,11 +8,11 @@ function App() {
     { name: "Vitor", age: 18 },
     { name: "Matt", age: 22 },
     { name: "Susie", age: 20 },
-    { name: "Eoghan", age: 23 }
+    { name: "Eoghan", age: 23 },
   ];
 
   const [count, setCount] = useState(1);
-  const [selectedStudent, setSelectedStudent] = useState('');
+  const [selectedStudent, setSelectedStudent] = useState("");
 
   const handleClick = () => {
     if (count < students.length) {
@@ -29,7 +29,12 @@ function App() {
       <h1>Student Names</h1>
       <ul>
         {students.slice(0, count).map((student, index) => (
-          <Student key={index} name={student.name} age={student.age} onClickStudent={onClickStudent} />
+          <Student
+            key={index}
+            name={student.name}
+            age={student.age}
+            onClickStudent={onClickStudent}
+          />
         ))}
       </ul>
       <button onClick={handleClick}>Show Next Student</button>
@@ -39,7 +44,6 @@ function App() {
 }
 
 export default App;
-
 
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
